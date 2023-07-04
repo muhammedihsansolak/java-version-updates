@@ -3,7 +3,8 @@ package com.cydeo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team <T> {//T-Soccer or Football or Baseball
+public class Team <T extends Player> {//T should accept only: Soccer / Football / Baseball players
+    //it should extend the Player.java class for restricting the generics
 
     private String name;
     private List<T> members = new ArrayList<>();
