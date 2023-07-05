@@ -1,8 +1,8 @@
 package com.cydeo.farmerTask;
 
-public class FindHeavyApples implements Inventory{
+public class FindHeavyApples implements ApplePredicate{
     @Override
-    public void find() {
-        System.out.println("find heavy");
+    public boolean find(Apple apple) {
+        return apple.getWeight()>200;
     }
 }

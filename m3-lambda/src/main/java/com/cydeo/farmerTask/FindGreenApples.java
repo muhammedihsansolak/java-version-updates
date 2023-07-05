@@ -1,8 +1,8 @@
 package com.cydeo.farmerTask;
 
-public class FindGreenApples implements Inventory{
+public class FindGreenApples implements ApplePredicate{
     @Override
-    public void find() {
-        System.out.println("find green");
+    public boolean find(Apple apple) {
+        return apple.getColor().equals(Color.GREEN);
     }
 }
