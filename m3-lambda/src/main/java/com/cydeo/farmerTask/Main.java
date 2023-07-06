@@ -2,6 +2,10 @@ package com.cydeo.farmerTask;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +19,9 @@ public class Main {
         System.out.println(  filterApple(inventory, new FindGreenApples() )  );
         System.out.println(  filterApple(inventory, new FindHeavyApples() )  );
 
+
+
+
     }
     private static List<Apple> filterApple(List<Apple> inventory , ApplePredicate applePredicate){
         List<Apple> result = new ArrayList<>();
@@ -26,4 +33,7 @@ public class Main {
         }
         return result;
     }
+
+
+
 }
