@@ -1,6 +1,5 @@
 package com.cydeo;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.*;
@@ -14,6 +13,14 @@ public class ReadyFunctionalInterfaces {
 
         Predicate<Integer> lesserThan = i -> i < 18 ;
         System.out.println( lesserThan.test(10) );
+
+        System.out.println("==================");
+
+        //**** BIPREDICATE ****
+
+        //accepts two objects returns a boolean value
+
+        BiPredicate<String,String> isEqual = (a,b) -> a.equals(b);
 
         System.out.println("==================");
 
@@ -45,8 +52,27 @@ public class ReadyFunctionalInterfaces {
 
         //accepts T return R
 
-        Function< String, String> fun = (s) -> "Hello "+s;
-        System.out.println( fun.apply("Muhammed") );
+        Function< String, String> function = (s) -> "Hello "+s;
+        System.out.println( function.apply("Muhammed") );
+
+        System.out.println("==================");
+
+        //**** BIFUNCTION ****
+
+        //accepts T and U return R
+
+        BiFunction<Integer,Integer,Integer> biFunction = (a,b) -> a+b;
+
+        System.out.println("==================");
+
+        //*** SUPPLIER ****
+
+        //has no parameters return T
+
+        Supplier<Double> randomValue = () -> Math.random();
+
+
+
 
     }
 }
