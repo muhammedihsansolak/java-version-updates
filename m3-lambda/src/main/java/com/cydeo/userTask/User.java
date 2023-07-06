@@ -1,13 +1,13 @@
 package com.cydeo.userTask;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
+import lombok.*;
+/*
 @ToString
 @Setter
 @Getter
+@AllArgsConstructor
+ */
+@Data //--> Getter,Setter,ToString and NoArgConstructor
 @AllArgsConstructor
 public class User {
     private String firstName, lastName;
