@@ -71,7 +71,7 @@ public class ReadyFunctionalInterfaces {
 
         Supplier<Double> randomValue = () -> Math.random();
 
-
+        System.out.println( randomValue.get() );
 
 
     }
