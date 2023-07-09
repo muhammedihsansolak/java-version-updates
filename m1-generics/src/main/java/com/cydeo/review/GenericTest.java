@@ -17,5 +17,13 @@ public class GenericTest {
         teacherList.add(new Teacher("Adam",201));
         teacherList.add(new Teacher("Severus",202));
 
+        //write a method that takes list of students, prints each student and the total student count
+        print(studentList);
+    }
+    public static void print(List<Student> list){
+        for (Student student : list) {
+            System.out.println(student);
+        }
+        System.out.println("Total student: "+list.size());
     }
 }
