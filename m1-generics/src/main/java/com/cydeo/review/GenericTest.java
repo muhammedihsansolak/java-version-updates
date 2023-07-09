@@ -26,6 +26,10 @@ public class GenericTest {
         for (T each : list) {
             System.out.println(each);
         }
-        System.out.println("Total student: "+list.size());
+        System.out.println("Total: "+list.size());
+    }
+
+    public static <I> I getLastItem(List<I> list){
+        return list.get( list.size()-1 );
     }
 }
