@@ -20,6 +20,8 @@ public class GenericTest {
         //write a method that takes list of students, prints each student and the total student count
         print(studentList);
         print(teacherList);
+        System.out.println( getLastItem( studentList ) );
+        System.out.println( getLastItem( teacherList ) );
 
     }
     public static <T> void print(List<T> list){ //in order to apply it for all object we use generic
