@@ -19,10 +19,12 @@ public class GenericTest {
 
         //write a method that takes list of students, prints each student and the total student count
         print(studentList);
+        print(teacherList);
+
     }
-    public static void print(List<Student> list){
-        for (Student student : list) {
-            System.out.println(student);
+    public static <T> void print(List<T> list){ //in order to apply it for all object we use generic
+        for (T each : list) {
+            System.out.println(each);
         }
         System.out.println("Total student: "+list.size());
     }
