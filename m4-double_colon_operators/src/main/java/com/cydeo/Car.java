@@ -1,12 +1,11 @@
 package com.cydeo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.function.Supplier;
-
+@ToString
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,12 +18,4 @@ public class Car {
         this.model = model;
     }
 
-
-    class CarTest {
-
-        Supplier<Car> c1 = () -> new Car();
-        Supplier<Car> c2 = Car::new;
-        //we can use double coma for calling constructor
-
-    }
 }
