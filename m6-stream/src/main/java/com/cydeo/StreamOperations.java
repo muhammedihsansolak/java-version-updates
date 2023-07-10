@@ -22,6 +22,16 @@ public class StreamOperations { //Intermediate Operations
 
         System.out.println("===============");
 
+        //transforms each element by applying the given mapper function
+        //**** map() ****
+
+        list.stream()
+                .filter(p -> p%2==0)
+                .map(p -> p*3)
+                .forEach(System.out::println);
+
+        System.out.println("===============");
+
         //removes the duplicated elements, returns unique ones
         //**** distinct() ****
 
@@ -40,6 +50,16 @@ public class StreamOperations { //Intermediate Operations
                 .limit(2);
 
         stream.forEach(System.out::println);
+
+        System.out.println("===============");
+
+        //discards the first given number of elements
+        //**** skip() ****
+
+        list.stream()
+                .filter(p->p>1)
+                .skip(2)
+                .forEach(System.out::println);
 
     }
 }
