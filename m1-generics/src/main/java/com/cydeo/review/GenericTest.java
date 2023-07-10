@@ -30,7 +30,7 @@ public class GenericTest {
         MyUtils<Teacher> obj2 = new MyUtils<>();
         System.out.println( obj2.getLastItem(teacherList) );
 
-        MyUtils<String> obj3 = new MyUtils<>();
+        //MyUtils<String> obj3 = new MyUtils<>();
 
     }
     public static <T> void print(List<T> list){ //in order to apply it for all object we use generic
