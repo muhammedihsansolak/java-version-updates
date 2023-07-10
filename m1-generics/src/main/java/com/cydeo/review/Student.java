@@ -1,35 +1,18 @@
 package com.cydeo.review;
 
+import lombok.*;
+
+//@AllArgsConstructor
+//@NoArgsConstructor
+@RequiredArgsConstructor
+//@Getter
+//@Setter
+//@ToString
+//@EqualsAndHashCode
+@Data
 public class Student extends Person {
     private String name;
-    private int id;
+    private final int id;
 
-    public Student(String name, int id) {
-        this.name = name;
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                '}';
-    }
+//if there is inheritance, lombok can not call super class constructor by using "super()". for conclusion, if there is inheritance avoid using lombok for constructors
 }
