@@ -20,5 +20,11 @@ public class AppleTest {
 
         inventory.sort( comparing(Apple::getWeight) );
 
+        //Chaining Methods
+        inventory
+                .sort( comparing(Apple::getWeight)
+                        .reversed()
+                        .thenComparing(Apple::getColor) );
+
     }
 }
