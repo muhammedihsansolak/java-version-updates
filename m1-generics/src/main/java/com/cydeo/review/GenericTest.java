@@ -23,6 +23,15 @@ public class GenericTest {
         System.out.println( getLastItem( studentList ) );
         System.out.println( getLastItem( teacherList ) );
 
+        MyUtils<Student> obj1 = new MyUtils<>();
+        System.out.println( obj1.getLastItem(studentList) );
+      //  System.out.println( obj1.print(teacherList) );
+
+        MyUtils<Teacher> obj2 = new MyUtils<>();
+        System.out.println( obj2.getLastItem(teacherList) );
+
+        MyUtils<String> obj3 = new MyUtils<>();
+
     }
     public static <T> void print(List<T> list){ //in order to apply it for all object we use generic
         for (T each : list) {
@@ -31,7 +40,7 @@ public class GenericTest {
         System.out.println("Total: "+list.size());
     }
 
-    public static <I> I getLastItem(List<I> list){
+    public static <T> T getLastItem(List<T> list){
         return list.get( list.size()-1 );
     }
 }

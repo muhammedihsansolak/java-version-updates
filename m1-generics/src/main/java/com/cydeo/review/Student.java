@@ -1,6 +1,6 @@
 package com.cydeo.review;
 
-public class Student {
+public class Student extends Person {
     private String name;
     private int id;
 
