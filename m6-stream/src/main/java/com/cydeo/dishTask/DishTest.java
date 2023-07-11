@@ -1,7 +1,6 @@
-package com.cydeo.Task;
+package com.cydeo.dishTask;
 
 import java.util.Comparator;
-import java.util.List;
 
 public class DishTest {
     public static void main(String[] args) {
