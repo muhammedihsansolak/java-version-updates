@@ -35,5 +35,7 @@ public class ReduceMethod {
 
         System.out.println(totalCal);
 
+
+
     }
 }
