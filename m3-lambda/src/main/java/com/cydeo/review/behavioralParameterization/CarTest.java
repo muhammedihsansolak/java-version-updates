@@ -12,10 +12,23 @@ public class CarTest {
                 new Car("BMW", 210, 2020),
                 new Car("Nissan", 170, 2018)
         ));
+        //behaviour parameterization
+
         System.out.println("Fast cars:");
-        System.out.println(filter(list, new CarFastPredicate()));
+        System.out.println( filter( list, new CarFastPredicate() ) );
         System.out.println("New cars:");
-        System.out.println(filter(list, new CarNewPredicate()));
+        System.out.println( filter( list, new CarNewPredicate() ) );
+
+        System.out.println("---------------");
+        //lambda
+
+        CarPredicate fastCarPredicate = car -> car.getTopSpeed()>160;
+
+        System.out.println("New Cars");
+        System.out.println( filter(list, car -> car.getYear() > 2015) ); // true - false
+        System.out.println("Fast Cars");
+        System.out.println( filter(list, fastCarPredicate) );
+
 
     }
     //we have one "test()" method in interface. We implemented them in subclasses of this interface. If we want to call both of them in same method we can use polymorphism. We use implemented versions of "test()" method for achieve different behaviours.
