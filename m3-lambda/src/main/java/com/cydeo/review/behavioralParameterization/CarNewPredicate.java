@@ -1,4 +1,4 @@
-package com.cydeo.review;
+package com.cydeo.review.behavioralParameterization;
 
 public class CarNewPredicate implements CarPredicate {
 
