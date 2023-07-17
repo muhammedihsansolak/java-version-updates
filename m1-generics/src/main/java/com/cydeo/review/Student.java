@@ -2,7 +2,7 @@ package com.cydeo.review;
 
 import lombok.*;
 
-//@AllArgsConstructor
+@AllArgsConstructor
 //@NoArgsConstructor
 @RequiredArgsConstructor
 //@Getter
