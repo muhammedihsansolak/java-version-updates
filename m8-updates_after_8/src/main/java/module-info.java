@@ -11,7 +11,9 @@ module Java9Module{
 }
      */
 
-    exports com.cydeo; // --> export ONLY cydeo package
+    exports com.cydeo;
+    exports com.cydeo.java9.stockTask;
+    exports com.cydeo.java9; // --> export ONLY cydeo package
 
 
         }

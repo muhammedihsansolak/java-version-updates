@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.java9;
 
 import java.util.List;
 import java.util.Scanner;
