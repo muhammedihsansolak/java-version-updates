@@ -1,4 +1,4 @@
-module Java9Module{
+module Java8Module{
     /*
     module myModule {
  // Define dependencies like
@@ -12,7 +12,6 @@ module Java9Module{
      */
 
 
-    exports com.cydeo.java9.stockTask;
     exports com.cydeo.java9; // --> export ONLY cydeo package
 
 
