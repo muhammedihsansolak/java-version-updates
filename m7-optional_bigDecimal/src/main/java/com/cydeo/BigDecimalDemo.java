@@ -19,5 +19,11 @@ public class BigDecimalDemo {
         //other way to create BigDecimal object -->
         BigDecimal b3 = BigDecimal.valueOf(374.56);
 
+        // compareTo()
+
+        System.out.println( new BigDecimal("2").compareTo(new BigDecimal("2")) );//0
+        System.out.println( new BigDecimal("3").compareTo(new BigDecimal("1")) );//1
+        System.out.println( new BigDecimal("1").compareTo(new BigDecimal("2")) );//-1
+
     }
 }
