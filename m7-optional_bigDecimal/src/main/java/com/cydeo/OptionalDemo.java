@@ -7,6 +7,9 @@ import java.util.Optional;
 public class OptionalDemo {
     public static void main(String[] args) {
 
+        //main point of using optional is return type of our custom methods. Don't overuse them
+
+
         List<Integer> numbers = Arrays.asList(2,4,2,10,23);
 
         //**** empty() & isPresent() ****
@@ -17,7 +20,10 @@ public class OptionalDemo {
 
         //**** of() ****
 
-        System.out.println( Optional.of(numbers).isPresent() );
+        System.out.println( Optional.of(numbers) );
+
+        String str = null;
+        System.out.println(Optional.ofNullable(str));//Optional.empty
 
         //**** ifPresent() ****
 
@@ -29,6 +35,7 @@ public class OptionalDemo {
 
        // System.out.println(bigNumber.get()); // NoSuchElementException
 
+        //if the object is empty it returns the orElse() method's value
         //**** orElse() ****
 
         System.out.println( bigNumber.orElse(5) );
