@@ -23,7 +23,5 @@ public class Main {
                 .flatMap(List::stream)//--> before this operation we have a List of phones, so we can call list class stream operator directly
                 .forEach(System.out::println);
 
-
-
     }
 }

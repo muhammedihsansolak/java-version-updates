@@ -101,5 +101,9 @@ public class CollectorsDemo {
 
         System.out.println(dishType);
 
+        Map<Type,Integer> map3 = DishData.getAll().stream()
+                .collect(Collectors.groupingBy( Dish::getType , Collectors.summingInt(Dish::getCalories)  ));
+
+        System.out.println(map3);
     }
 }
